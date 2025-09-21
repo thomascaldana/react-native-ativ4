@@ -9,7 +9,7 @@ Este é um projeto React Native que implementa um catálogo de produtos com nave
 - **Navegação**: Navegação fluida entre as telas usando Expo Router
 - **Design Moderno**: Interface responsiva e atrativa com componentes estilizados
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - React Native
 - Expo Router
@@ -17,7 +17,7 @@ Este é um projeto React Native que implementa um catálogo de produtos com nave
 - API dummyjson (requisições reais)
 - React Native Safe Area Context
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 app/
@@ -33,7 +33,7 @@ services/
 └── api.ts              # Serviços de API para dummyjson
 ```
 
-## 🚀 Como Executar
+## Como Executar
 
 1. Instale as dependências:
 ```bash
@@ -50,7 +50,7 @@ npm start
    - `i` para iOS
    - `w` para Web
 
-## 📊 API Integration
+## API Integration
 
 O projeto agora utiliza a API real da dummyjson com:
 - Requisições HTTP para buscar produtos
@@ -59,7 +59,7 @@ O projeto agora utiliza a API real da dummyjson com:
 - Pull-to-refresh na listagem
 - Navegação segura com SafeAreaView
 
-## 🎨 Design
+## Design
 
 - Interface moderna com cards sombreados
 - Sistema de avaliação com estrelas
@@ -78,7 +78,7 @@ O projeto agora utiliza a API real da dummyjson com:
 - ✅ Navegação entre telas
 - ✅ Interface responsiva
 
-## 📱 Telas
+##  Telas
 
 ### Tela Principal (Listagem)
 - Lista de produtos em cards
