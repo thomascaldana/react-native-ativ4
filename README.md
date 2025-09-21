@@ -1,50 +1,92 @@
-# Welcome to your Expo app 👋
+# React Native - Atividade 4
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um projeto React Native que implementa um catálogo de produtos com navegação entre telas, baseado na API dummyjson.
 
-## Get started
+## 📱 Funcionalidades
 
-1. Install dependencies
+- **Listagem de Produtos**: Tela principal com lista de produtos em cards modernos
+- **Detalhes do Produto**: Tela de detalhes com informações completas do produto
+- **Navegação**: Navegação fluida entre as telas usando Expo Router
+- **Design Moderno**: Interface responsiva e atrativa com componentes estilizados
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Tecnologias Utilizadas
 
-2. Start the app
+- React Native
+- Expo Router
+- TypeScript
+- API dummyjson (requisições reais)
+- React Native Safe Area Context
 
-   ```bash
-   npx expo start
-   ```
+## 📂 Estrutura do Projeto
 
-In the output, you'll find options to open the app in a
+```
+app/
+├── _layout.tsx          # Configuração de navegação
+├── index.tsx            # Tela de listagem de produtos
+└── product/
+    └── [id].tsx         # Tela de detalhes do produto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+data/
+└── mockProducts.ts      # Tipos e interfaces dos produtos
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+services/
+└── api.ts              # Serviços de API para dummyjson
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚀 Como Executar
 
-## Learn more
+1. Instale as dependências:
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+2. Inicie o projeto:
+```bash
+npm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. Use o QR code para abrir no Expo Go ou pressione:
+   - `a` para Android
+   - `i` para iOS
+   - `w` para Web
 
-## Join the community
+## 📊 API Integration
 
-Join our community of developers creating universal apps.
+O projeto agora utiliza a API real da dummyjson com:
+- Requisições HTTP para buscar produtos
+- Estados de loading durante carregamento
+- Tratamento de erros com retry
+- Pull-to-refresh na listagem
+- Navegação segura com SafeAreaView
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🎨 Design
+
+- Interface moderna com cards sombreados
+- Sistema de avaliação com estrelas
+- Carrossel de imagens
+- SafeAreaView para evitar invasão de áreas do sistema
+- Cores consistentes e tipografia legível
+- Estados de loading e erro bem definidos
+
+## ✨ Funcionalidades Implementadas
+
+- ✅ Listagem de produtos da API real
+- ✅ Detalhes completos do produto
+- ✅ Estados de loading e erro
+- ✅ Pull-to-refresh
+- ✅ SafeAreaView configurado
+- ✅ Navegação entre telas
+- ✅ Interface responsiva
+
+## 📱 Telas
+
+### Tela Principal (Listagem)
+- Lista de produtos em cards
+- Informações resumidas de cada produto
+- Navegação ao tocar no produto
+
+### Tela de Detalhes
+- Carrossel de imagens
+- Informações completas do produto
+- Reviews e avaliações
+- Botão de adicionar ao carrinho
